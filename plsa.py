@@ -80,7 +80,7 @@ class Corpus(object):
         self.term_doc_matrix[i][j] is the count of term j in document i
         """
 
-        print("Inside build_term_doc_matrix>>> ")
+        print("Inside build_term_doc_matrix  >>> ")
         self.term_doc_matrix = np.zeros([self.number_of_documents,self.vocabulary_size])
         for kVal in range(0, self.number_of_documents):
             for lVal,wordVocab in enumerate(self.vocabulary):
